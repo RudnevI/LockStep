@@ -1,0 +1,6 @@
+Autofac;
+Autofac.Mvc5;
+Autofac.Mvc5.Owin;
+Autofac.Owin;
+Microsoft.Owin.Host.SystemWeb;
+Owin;

@@ -1,0 +1,30 @@
+﻿@model Dictionary<string, string>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        @ViewBag.String
+    </div>
+    <div class="col-md-4">
+        @foreach (var item in ViewBag.StringList)
+        {
+                <p>@item</p>
+        }
+    </div>
+    <div class="col-md-4">
+        @{ 
+            var dictionary = (Dictionary<string, string>)ViewBag.StringDictionary;
+            foreach (var item in dictionary)
+            {
+                <p><b>@item.Key</b>: @item.Value</p>
+            }
+        }
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+
+    </div>
+</div>
