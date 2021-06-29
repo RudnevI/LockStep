@@ -40,4 +40,15 @@
             <b>Коллекция не пуста, обновить?</b>
         }
     </code>
+    <p>Состояние хранилища цен</p>
+    <code>
+        @if (ViewBag.IsEmptyPrices)
+        {
+            <b>Коллекция пуста. <input type="submit" name="create_prices" value="Cоздать" /> новую?</b>
+        }
+        else
+        {
+            <b>Коллекция не пуста, обновить?</b>
+        }
+    </code>
 </form>

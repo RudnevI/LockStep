@@ -6,6 +6,10 @@ namespace LockStep.Library.Persistence
 {
     public class LibraryDbContext : DbContext
     {
+        public LibraryDbContext()
+        {
+            
+        }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<BookAuthor> BookAuthors { get; set; }

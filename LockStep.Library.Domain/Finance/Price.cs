@@ -14,6 +14,6 @@ namespace LockStep.Library.Domain.Finance
         public Book Book { get; set; }
         public string Value { get; set; }
         public DateTime From { get; set; }
-        public DateTime To { get; set; }
+        public DateTime? To { get; set; }
     }
 }

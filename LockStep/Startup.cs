@@ -24,6 +24,7 @@ namespace LockStep.Web
             builder.RegisterType<BookCommentRepository>().As<IBookCommentRepository>();
             builder.RegisterType<BookVoteRepository>().As<IBookVoteRepository>();
             builder.RegisterType<ProductRepository>().As<IProductRepository>();
+            builder.RegisterType<PriceRepository>().As<IPriceRepository>();
 
            
 
